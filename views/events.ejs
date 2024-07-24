@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Events</title>
+  <link rel="stylesheet" type="text/css" href="/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Events</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="/events/add">Add Event</a></li>
+      <li><a href="/logout">Logout</a></li>
+    </ul>
+  </nav>
+  <main>
+    <h2>List of Events</h2>
+    <ul>
+      <% event.forEach(event => { %>
+        <li>
+          <h3><%= event.name %></h3>
+          <p>Organizer: <%= event.organizer %></p>
+          <p>Description: <%= event.description %></p>
+          <!-- You can include more event details here -->
+        </li>
+      <% }); %>
+    </ul>
+  </main>
+</body>
+</html>
