@@ -69,9 +69,10 @@ The application connects to a MongoDB database using Mongoose:
 
 ```javascript
 mongoose.connect('mongodb+srv://<username>:<password>@<cluster>.mongodb.net/<dbname>?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true });
-
-Replace the connection string with your MongoDB Atlas connection string.
 ```
+Replace the connection string with your MongoDB Atlas connection string.
+
+
 # Routes
 
 ## Home Route
